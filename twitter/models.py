@@ -4,9 +4,9 @@ from django.utils import timezone
 # Create your models here.
 
 class User(models.Model):
-    name = models.CharField(verbose_name='タイトル', max_length=100)
-    email = models.CharField(max_length=100)
-    password = models.TextField(blank=False, null=False)
+    name = models.CharField(verbose_name='名前', max_length=100)
+    email = models.CharField(verbose_name='メール', max_length=100)
+    password = models.CharField(verbose_name='パスワード', blank=False, null=False, max_length=100)
     
 
 class Tweet(models.Model):

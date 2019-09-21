@@ -32,6 +32,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='tweet',
             name='user',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.User'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Tweet.User'),
         ),
     ]
